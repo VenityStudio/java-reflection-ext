@@ -6,6 +6,11 @@
 
 Use ``jppm publish --yes`` command to build and publish to local repository
 
+## API Documentation
+
+ * [Русский](api-docs/README.ru.md)
+ * [English](api-docs/README.md)
+
 ## Example
 
 Building **Swing** form:
