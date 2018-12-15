@@ -4,6 +4,14 @@ description: Java Reflection API
 
 plugins: 
    - Gradle
+   - Doc
+   - Hub
 
 deps:
   jphp-runtime: "*"
+
+doc:
+  url-prefix: https://github.com/VenityStudio/java-reflection-ext/blob/master/api-docs/
+  langs:
+    en: English
+    ru: Русский
