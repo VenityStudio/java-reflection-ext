@@ -1,0 +1,12 @@
+/.gradle/**
+/.idea/**
+/build/**
+/gradle/
+/jars/**
+/out/**
+/vendor/**
+/build.gradle
+/gradlew
+/gradlew.bat
+**.iml
+/package-lock.php.yml

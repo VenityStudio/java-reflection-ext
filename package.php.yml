@@ -1,0 +1,9 @@
+name: java-reflection-ext
+version: 1.0.0
+description: Java Reflection API
+
+plugins: 
+   - Gradle
+
+deps:
+  jphp-runtime: "*"
