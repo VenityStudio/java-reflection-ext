@@ -27,6 +27,8 @@
 - `->`[`getDeclaredConstructors()`](#method-getdeclaredconstructors)
 - `->`[`getFields()`](#method-getfields)
 - `->`[`getDeclaredFields()`](#method-getdeclaredfields)
+- `->`[`getName()`](#method-getname)
+- `->`[`getCanonicalName()`](#method-getcanonicalname)
 
 ---
 # Static Methods
@@ -163,4 +165,22 @@ getFields(): ReflectionField[]
 ### getDeclaredFields()
 ```php
 getDeclaredFields(): ReflectionField[]
+```
+
+---
+
+<a name="method-getname"></a>
+
+### getName()
+```php
+getName(): string
+```
+
+---
+
+<a name="method-getcanonicalname"></a>
+
+### getCanonicalName()
+```php
+getCanonicalName(): string
 ```

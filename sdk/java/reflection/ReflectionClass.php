@@ -81,4 +81,14 @@ class ReflectionClass
      * @return ReflectionField[]
      */
     public function getDeclaredFields(): array {}
+
+    /**
+      * @return string
+      */
+    public function getName(): string {}
+
+    /**
+      * @return string
+      */
+    public function getCanonicalName(): string {}
 }

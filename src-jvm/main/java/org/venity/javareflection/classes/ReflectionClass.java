@@ -136,4 +136,14 @@ public class ReflectionClass extends BaseWrapper<Class> {
     public ReflectionField getDeclaredField(String name) throws NoSuchFieldException {
         return new ReflectionField(__env__, __wrappedObject.getDeclaredField(name));
     }
+
+    @Reflection.Signature
+    public String getName() {
+        return getWrappedObject().getName();
+    }
+
+    @Reflection.Signature
+    public String getCanonicalName() {
+        return getWrappedObject().getCanonicalName();
+    }
 }
