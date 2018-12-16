@@ -1,6 +1,7 @@
 # Java Bridge for jPHP
 
 [![Venity project status](https://img.shields.io/badge/Venity-official-blue.svg)](https://vk.com/venity)
+[![Build Status](https://travis-ci.org/VenityStudio/java-reflection-ext.svg?branch=master)](https://travis-ci.org/VenityStudio/java-reflection-ext)
 
 ## How to build ?
 
