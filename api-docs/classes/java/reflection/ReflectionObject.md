@@ -5,11 +5,27 @@
 
 ---
 
+#### Static Methods
+
+- `ReflectionObject ::`[`fromMemory()`](#method-frommemory)
+
+---
+
 #### Methods
 
 - `->`[`getReflectionClass()`](#method-getreflectionclass)
 - `->`[`equals()`](#method-equals)
 - `->`[`toMemory()`](#method-tomemory) - _Get jPHP data_
+
+---
+# Static Methods
+
+<a name="method-frommemory"></a>
+
+### fromMemory()
+```php
+ReflectionObject::fromMemory(mixed $data): java\reflection\ReflectionObject
+```
 
 ---
 # Methods

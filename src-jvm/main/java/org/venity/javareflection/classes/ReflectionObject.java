@@ -43,4 +43,9 @@ public class ReflectionObject extends BaseWrapper<Object> {
     public Memory toMemory() {
         return Memory.wrap(__env__, this.getWrappedObject());
     }
+
+    @Reflection.Signature
+    public static ReflectionObject fromMemory(Environment environment, Memory memory) {
+        return new ReflectionObject(environment, Memory.unwrap(environment, memory));
+    }
 }

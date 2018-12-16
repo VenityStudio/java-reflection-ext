@@ -20,4 +20,10 @@ class ReflectionObject
      * Get jPHP data
      */
     public function toMemory() {}
+
+    /**
+     * @param $data
+     * @return ReflectionObject
+     */
+    public static function fromMemory($data): ReflectionObject {}
 }
