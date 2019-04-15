@@ -75,4 +75,10 @@ class ReflectionTypes
      * @return ReflectionObject
      */
     public function toShort($data): ReflectionObject {}
+
+    /**
+     * Null for java
+     * @return ReflectionObject
+     */
+    public function getNull(): ReflectionObject {}
 }

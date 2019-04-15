@@ -85,4 +85,9 @@ public class ReflectionTypes extends BaseObject {
     public static ReflectionObject toShort(Environment environment, short data) {
         return new ReflectionObject(environment, data);
     }
+
+    @Reflection.Signature
+    public static ReflectionObject getNull(Environment environment) {
+        return new ReflectionObject(environment, null);
+    }
 }
