@@ -26,4 +26,12 @@ class ReflectionObject
      * @return ReflectionObject
      */
     public static function fromMemory($data): ReflectionObject {}
+
+    /**
+     * Return ReflectionObject (php.runtime.invoke.Invoker)
+     *
+     * @param callable $data
+     * @return ReflectionObject
+     */
+    public static function fromCallback(callable $data): ReflectionObject {}
 }

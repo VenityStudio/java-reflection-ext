@@ -4,6 +4,7 @@ import org.venity.javareflection.JavaReflectionExtension;
 import php.runtime.Memory;
 import php.runtime.annotation.Reflection;
 import php.runtime.env.Environment;
+import php.runtime.invoke.Invoker;
 import php.runtime.lang.BaseWrapper;
 import php.runtime.reflection.ClassEntity;
 
@@ -47,5 +48,10 @@ public class ReflectionObject extends BaseWrapper<Object> {
     @Reflection.Signature
     public static ReflectionObject fromMemory(Environment environment, Memory memory) {
         return new ReflectionObject(environment, Memory.unwrap(environment, memory));
+    }
+
+    @Reflection.Signature
+    public static ReflectionObject fromCallback(Environment environment, Invoker callback) {
+        return new ReflectionObject(environment, callback);
     }
 }
