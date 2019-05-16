@@ -8,9 +8,10 @@ class ReflectionClass
 
     /**
      * @param string $javaClassName
+     * @param JarClassLoader $cl
      * @return ReflectionClass
      */
-    public static function forName(string $javaClassName): ReflectionClass {}
+    public static function forName(string $javaClassName, JarClassLoader $cl = null): ReflectionClass {}
 
     public function newInstance(): ReflectionObject {}
 

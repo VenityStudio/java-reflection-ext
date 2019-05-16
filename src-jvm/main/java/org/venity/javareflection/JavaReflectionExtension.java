@@ -6,10 +6,7 @@ import php.runtime.env.CompileScope;
 import php.runtime.env.Environment;
 import php.runtime.ext.support.Extension;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Executable;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
+import java.lang.reflect.*;
 
 public class JavaReflectionExtension extends Extension {
     public static final String NS = "java\\reflection";
@@ -26,12 +23,15 @@ public class JavaReflectionExtension extends Extension {
 
     @Override
     public void onRegister(CompileScope scope) {
+        registerClass(scope, JarClassLoader.class);
+
         registerWrapperClass(scope, Class.class, ReflectionClass.class);
         registerWrapperClass(scope, Object.class, ReflectionObject.class);
         registerWrapperClass(scope, Executable.class, ReflectionExecutable.class);
         registerWrapperClass(scope, Constructor.class, ReflectionConstructor.class);
         registerWrapperClass(scope, Method.class, ReflectionMethod.class);
         registerWrapperClass(scope, Field.class, ReflectionField.class);
+        registerWrapperClass(scope, Array.class, ReflectionArray.class);
 
         registerClass(scope, ReflectionTypes.class);
     }

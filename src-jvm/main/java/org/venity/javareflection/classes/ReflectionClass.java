@@ -33,6 +33,11 @@ public class ReflectionClass extends BaseWrapper<Class> {
     }
 
     @Reflection.Signature
+    public static ReflectionClass forName(Environment env, String className, JarClassLoader classLoader) throws ClassNotFoundException {
+        return new ReflectionClass(env, Class.forName(className, false, classLoader.getClassLoader()));
+    }
+
+    @Reflection.Signature
     public ReflectionObject newInstance() throws IllegalAccessException, InstantiationException {
         return new ReflectionObject(__env__, __wrappedObject.newInstance());
     }
