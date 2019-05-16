@@ -10,8 +10,20 @@ plugins:
 deps:
   jphp-runtime: "*"
 
+devDeps:
+  dn-bundle-plugin: '*'
+
 doc:
   url-prefix: https://github.com/VenityStudio/java-reflection-ext/blob/master/api-docs/
   langs:
     en: English
     ru: Русский
+
+develnext-bundle:
+  version: 1.1.1
+  name: "Java Reflection API"
+  author: "Venity Studio"
+  icon: "develnext/bundle/reflection/icon32.png"
+  description: "Пакет для работы с Java Reflection"
+  group: "system"
+  class: "develnext\\bundle\\reflection\\JavaReflectionBundle"
