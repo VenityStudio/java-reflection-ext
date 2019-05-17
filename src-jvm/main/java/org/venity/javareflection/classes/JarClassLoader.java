@@ -7,6 +7,8 @@ import php.runtime.lang.BaseObject;
 import php.runtime.reflection.ClassEntity;
 
 import java.io.File;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
@@ -36,6 +38,32 @@ public class JarClassLoader extends BaseObject {
                 this.getClass().getClassLoader()
         );
     }
+
+    @Reflection.Signature
+    public void __construct() throws MalformedURLException {
+        classLoader = new URLClassLoader(
+                new URL[0],
+                this.getClass().getClassLoader()
+        );
+    }
+
+    @Reflection.Signature
+    public void addJar(File jar)
+            throws MalformedURLException, NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+        Method addURL = classLoader
+                .getClass()
+                .getDeclaredMethod("addURL", URL.class);
+        addURL.setAccessible(true);
+        addURL.invoke(classLoader, jar);
+    }
+
+    @Reflection.Signature
+    public void addJars(File[] jars)
+            throws InvocationTargetException, MalformedURLException, IllegalAccessException, NoSuchMethodException {
+        for (File jar: jars)
+            addJar(jar);
+    }
+
 
     public URLClassLoader getClassLoader() {
         return classLoader;

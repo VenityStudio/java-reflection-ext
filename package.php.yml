@@ -1,5 +1,5 @@
 name: java-reflection-ext
-version: 1.2.0
+version: 1.2.1
 description: Java Reflection API
 
 plugins: 
@@ -20,7 +20,7 @@ doc:
     ru: Русский
 
 develnext-bundle:
-  version: 1.2.0
+  version: 1.2.1
   name: "Java Reflection API"
   author: "Venity Studio"
   icon: "develnext/bundle/reflection/icon32.png"

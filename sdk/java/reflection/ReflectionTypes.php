@@ -8,77 +8,77 @@ class ReflectionTypes
     /**
      * @return ReflectionClass
      */
-    public function typeInt(): ReflectionClass {}
+    public static function typeInt(): ReflectionClass {}
 
     /**
      * @return ReflectionClass
      */
-    public function typeBool(): ReflectionClass {}
+    public static function typeBool(): ReflectionClass {}
 
     /**
      * @return ReflectionClass
      */
-    public function typeLong(): ReflectionClass {}
+    public static function typeLong(): ReflectionClass {}
 
     /**
      * @return ReflectionClass
      */
-    public function typeDouble(): ReflectionClass {}
+    public static function typeDouble(): ReflectionClass {}
 
     /**
      * @return ReflectionClass
      */
-    public function typeFloat(): ReflectionClass {}
+    public static function typeFloat(): ReflectionClass {}
 
     /**
      * @return ReflectionClass
      */
-    public function typeByte(): ReflectionClass {}
+    public static function typeByte(): ReflectionClass {}
 
     /**
      * @return ReflectionClass
      */
-    public function typeShort(): ReflectionClass {}
+    public static function typeShort(): ReflectionClass {}
 
     /**
      * @param $data
      * @return ReflectionObject
      */
-    public function toInt($data): ReflectionObject {}
+    public static function toInt($data): ReflectionObject {}
 
     /**
      * @param $data
      * @return ReflectionObject
      */
-    public function toLong($data): ReflectionObject {}
+    public static function toLong($data): ReflectionObject {}
 
     /**
      * @param $data
      * @return ReflectionObject
      */
-    public function toDouble($data): ReflectionObject {}
+    public static function toDouble($data): ReflectionObject {}
 
     /**
      * @param $data
      * @return ReflectionObject
      */
-    public function toFloat($data): ReflectionObject {}
+    public static function toFloat($data): ReflectionObject {}
 
     /**
      * @param $data
      * @return ReflectionObject
      */
-    public function toByte($data): ReflectionObject {}
+    public static function toByte($data): ReflectionObject {}
 
     /**
      * @param $data
      * @return ReflectionObject
      */
-    public function toShort($data): ReflectionObject {}
+    public static function toShort($data): ReflectionObject {}
 
     /**
      * Null for java
      * @return ReflectionObject
      */
-    public function getNull(): ReflectionObject {}
+    public static function getNull(): ReflectionObject {}
 }
